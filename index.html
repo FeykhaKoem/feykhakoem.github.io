@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project.02-CSS (Home Page)</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVIGATION BAR -->
+    <div class="navbar">
+        <ul class="ul-navbar">
+            <li class="li-navbar">
+                <a href="index.html" class="a-contentbar">HOME</a>
+            </li>
+            <li class="li-navbar">
+                <a href="gallery.html" class="a-navbar">GALLERY</a>
+            </li>
+            <li class="li-navbar">
+                <a href="blog.html" class="a-navbar">BLOG</a>
+            </li>
+            <li class="li-navbar">
+                <a href="contact.html" class="a-navbar">CONTACT</a>
+            </li>
+        </ul>
+    </div>
+    <!-- NAVIGATION BAR END -->
+
+    <!-- CONTENT -->
+    <div class="content" style="text-align:center;">
+        <br>
+        <a id="typewriter"></a> 
+
+        <br>
+        <a>Tujuan dibuatnya web ini untuk memenuhi Tugas Project.02-CSS dari Mata Kuliah Pemograman Web</a>
+    </div>
+    <!-- CONTENT END -->
+
+    <!-- FOOTER -->
+    <div>
+
+    </div>
+    <!-- FOOTER END -->
+    <script>
+        var text = "Halo.... Perkenalkan nama saya Feykha Koem dengan NIM 220211060326";
+        var speed = 100; // milliseconds per character
+
+        function typeWriter() {
+            if (text.length > 0) {
+                document.getElementById("typewriter").innerHTML += text.charAt(0);
+                text = text.substring(1);
+                setTimeout(typeWriter, speed);
+            }
+        }
+
+        typeWriter();
+    </script>
+</body>
+</html>
